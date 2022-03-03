@@ -1,0 +1,20 @@
+button{
+    margin-top: 4.9rem;
+    margin-bottom: 0.2rem;
+    border: none;
+    width: 100%;
+    color: white;
+    background-color: #006eb6;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.9rem 0;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    background-color: white;
+    color: #006eb6;
+    /* transform: scale(0.9); */
+    /* box-shadow: 5px 5px 35px #006eb6; */
+
+}

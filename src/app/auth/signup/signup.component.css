@@ -1,0 +1,93 @@
+::ng-deep * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.branding{
+    text-align: center;
+    width: 30rem;
+}
+.branding img{
+    width: 6rem;
+    padding: 0.4rem 0;
+}
+.branding h2{
+    font-weight: 400;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    /* border: 1px solid silver; */
+    border-radius: 10px;
+    width: 28rem;
+}
+
+/* FORM  */
+
+.card h2{
+    font-weight: 400;
+    font-size: 2rem ;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+button:enabled{
+    width: 100%;
+    border: none;
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    background-color: #006eb6;
+    color: white;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 2rem;
+}
+button:disabled{
+    width: 100%;
+    border: none;
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #239ec4;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+    border-radius: 2rem;
+    cursor: not-allowed;
+}
+.lead{
+    text-align: center;
+    color: rgba(75, 73, 73, 0.775);
+    font-size: 0.8rem;
+}
+.policy{
+    text-align: center;
+    color: #006eb6;
+    cursor: pointer;
+}
+/* error messages */
+
+p{
+    margin: 0;
+    font-size: 0.8rem;
+    padding: 7px 0;
+    padding-top: 0;
+    color: red;
+}
+.noconnection{
+    text-align: center;
+}

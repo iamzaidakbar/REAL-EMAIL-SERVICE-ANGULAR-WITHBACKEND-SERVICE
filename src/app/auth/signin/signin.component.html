@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="card">
+    <h2>Login your account</h2>
+    <form (ngSubmit)="onSubmit()" [formGroup]="authForm">
+      <div class="formgroup">
+        <app-input
+          label="Username"
+          [control]="authForm.get('username')"
+          placeholder="Username"
+        ></app-input>
+      </div>
+
+      <div class="formgroup">
+        <app-input
+          label="Password"
+          [control]="authForm.get('password')"
+          placeholder="Password"
+          type="password"
+        ></app-input>
+      </div>
+
+      <div *ngIf="authForm.errors">
+        <p class="loginCredentials" *ngIf="authForm.errors.loginCredentials">
+            invalid username or password !
+          </p>
+      </div>
+
+      <button [disabled]="authForm.invalid" type="submit">Submit</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.container {
+    height: 69vh;
+    width: 70vw;
+    background-color: white;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-left: 1px solid rgb(236, 233, 233) ;
+    /* background-color: rgb(238, 232, 232); */
+  }
+  img{
+      width: 8rem;
+      margin-top: 10rem;
+  }
+  .placeholder-message{
+      font-size: 1.4rem;
+      font-weight: 500;
+  }

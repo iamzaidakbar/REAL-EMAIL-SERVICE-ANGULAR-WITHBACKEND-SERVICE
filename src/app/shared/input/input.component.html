@@ -1,0 +1,13 @@
+<div class="formgroup">
+   <label>{{label}}</label>
+   <input *ngIf="controlType === 'input'" type="{{type}}" placeholder="{{placeholder}}" [formControl]="control" >
+   <textarea class="textarea" *ngIf="controlType === 'textarea'" [formControl]="control"></textarea>
+   <div *ngIf="showErrors()">
+      <p *ngIf="control.errors.email">Enter a valid email</p>
+      <p *ngIf="control.errors.required" >Field cannot be empty</p>
+      <p *ngIf="control.errors.minlength" >Cannot be less than {{control.errors.minlength.requiredLength}} characters</p>
+      <p *ngIf="control.errors.maxlength" >Cannot be more than {{control.errors.maxlength.requiredLength}} characters</p>
+      <p *ngIf="control.errors.pattern">Invalid format</p>
+      <p *ngIf="control.errors.UsernameAvailable === false">Username is taken</p>
+   </div>
+</div>

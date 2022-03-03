@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="branding">
+    <h2>Secure and Private Email Service</h2>
+    <div>
+      <img src="../../../assets/email.png" alt="" />
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Create an Account</h2>
+    <p class="lead">Its's free and only takes a minute.</p>
+    <form (ngSubmit)="onSubmit()" [formGroup]="authForm">
+      <div class="formgroup">
+        <app-input
+          label="Username"
+          [control]="authForm.get('username')"
+          placeholder="Username"
+        ></app-input>
+      </div>
+
+      <div class="formgroup">
+        <app-input
+          label="Password"
+          [control]="authForm.get('password')"
+          placeholder="Password"
+          type="password"
+        ></app-input>
+      </div>
+
+      <div
+        *ngIf=" authForm.get('password').touched &&  authForm.get('passwordConfirmation').touched && authForm.errors "
+      >
+        <p *ngIf="authForm.errors.passwordsDontMatch">
+          Password does not match !
+        </p>
+      </div>
+
+      <div class="formgroup">
+        <app-input
+          label="Confirm Password"
+          [control]="authForm.get('passwordConfirmation')"
+          placeholder="Confirm Password"
+          type="password"
+        ></app-input>
+      </div>
+
+      <div
+        *ngIf=" authForm.get('password').touched &&  authForm.get('passwordConfirmation').touched && authForm.errors "
+      >
+        <p *ngIf="authForm.errors.passwordsDontMatch">
+          Password does not match !
+        </p>
+        <p class="noconnection" *ngIf="authForm.errors.noConnection">
+          No internet connection detected, failed to signup!
+        </p>
+        <p class="noconnection" *ngIf="authForm.errors.unknownError">
+          Something went wrong! PLease try again.
+        </p>
+      </div>
+
+      <button [disabled]="authForm.invalid" type="submit">Submit</button>
+
+      <p class="lead">By clicking the Sign Up button, you agree to our</p>
+      <p class="policy">Terms and Condition & Privacy Policy</p>
+    </form>
+    <!-- {{ authForm.errors| json }} -->
+  </div>
+</div>

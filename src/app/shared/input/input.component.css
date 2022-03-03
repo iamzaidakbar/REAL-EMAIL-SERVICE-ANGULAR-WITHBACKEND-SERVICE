@@ -1,0 +1,48 @@
+.formgroup {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  color: rgb(43, 43, 43);
+}
+.textarea{
+  padding: 0.7rem 1rem;
+  border: 1px solid rgb(219, 214, 214);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+}
+.textarea:focus{
+  outline: none;
+  border-color: #006eb6;
+}
+input {
+  padding: 0.7rem 1rem;
+  border: 1px solid rgb(219, 214, 214);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+}
+input:focus {
+  outline: none;
+  border-color: #006eb6;
+}
+::placeholder {
+  color: silver;
+}
+.alert {
+  border: 1px solid red;
+}
+
+/* Error Messages */
+
+p {
+  margin: 0;
+  font-size: 0.8rem;
+  padding-bottom: 0.7rem 0;
+  color: red;
+}
+
+

@@ -1,0 +1,23 @@
+<div class="container">
+
+  <div class="response-header">
+    <div class="subject">
+      <h3>{{email.subject}}</h3>
+    </div>
+    <div class="text">
+      <i>{{email.from}}</i>
+    </div>
+    <div class="flex">
+      <div class="to">
+        <i>To: {{email.to}}s</i>
+      </div>
+      <div>
+        <app-email-reply [email]="email"></app-email-reply>
+      </div>
+    </div>
+  </div>
+<hr>
+  <div class="response-body">
+      <div [innerHTML]="email.html"></div>
+  </div>
+</div>

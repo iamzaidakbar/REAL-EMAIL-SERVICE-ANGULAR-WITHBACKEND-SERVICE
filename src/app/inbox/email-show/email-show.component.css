@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 69vh;
+    width: 70vw;
+    overflow: hidden;
+    margin-top: 8rem;
+    overflow-y: auto;
+    background-color:white;
+    color: black;
+    padding: 2rem;
+  }
+  .subject h3{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+.text, .to {
+  color: rgba(0, 0, 0, 0.575);
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+hr{
+  border: 1px solid rgb(247, 243, 243);
+  margin: 2rem 0;
+}
